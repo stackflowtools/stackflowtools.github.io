@@ -1,311 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StackFlow Tools — Free Online Tools Pakistan</title>
-<meta name="description" content="Free online tools for Pakistani 
-creators, gamers and designers. PUBG Name Generator, Background 
-Remover, Image Compressor and 25+ more tools. No signup, no cost.">
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { 
-  font-family: Arial, sans-serif; 
-  max-width: 900px; 
-  margin: 0 auto; 
-  padding: 20px;
-  color: #1f2937;
-}
-header {
-  background: linear-gradient(135deg, #1e40af, #2563eb);
-  color: white;
-  padding: 40px 30px;
-  border-radius: 12px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-header h1 { font-size: 32px; margin-bottom: 10px; }
-header p { font-size: 16px; opacity: 0.9; }
-.badges { margin: 15px 0; }
-.badge { 
-  background: rgba(255,255,255,0.2); 
-  padding: 5px 12px; 
-  border-radius: 20px; 
-  font-size: 13px;
-  margin: 3px;
-  display: inline-block;
-}
-.hero-tool {
-  background: #f0fdf4;
-  border: 2px solid #16a34a;
-  border-radius: 12px;
-  padding: 25px;
-  margin-bottom: 30px;
-}
-.hero-tool h2 { color: #15803d; margin-bottom: 10px; }
-.hero-tool a {
-  display: inline-block;
-  background: #16a34a;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 15px;
-}
-h2 { 
-  color: #1e40af; 
-  border-bottom: 2px solid #e5e7eb; 
-  padding-bottom: 8px;
-  margin: 25px 0 15px;
-}
-.tool-grid { 
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  gap: 12px;
-  margin-bottom: 20px;
-}
-.tool-card { 
-  border: 1px solid #e5e7eb; 
-  padding: 14px; 
-  border-radius: 8px;
-  transition: border-color 0.2s;
-}
-.tool-card:hover { border-color: #2563eb; }
-.tool-card a { 
-  color: #2563eb; 
-  text-decoration: none;
-  font-weight: 500;
-}
-.tool-card p { 
-  font-size: 12px; 
-  color: #6b7280; 
-  margin-top: 4px;
-}
-footer {
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  border-top: 1px solid #e5e7eb;
-  color: #6b7280;
-  font-size: 14px;
-}
-footer a { color: #2563eb; }
-@media(max-width:600px){
-  .tool-grid { grid-template-columns: 1fr; }
-  header h1 { font-size: 24px; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackFlow Tools — Free Online Tools for Pakistan</title>
+    <meta name="description" content="Free online tools for Pakistani creators, gamers and designers. PUBG name generator, Free Fire name generator, image tools, finance calculators — no signup required.">
+    <meta name="keywords" content="PUBG name generator, Free Fire name generator, image compressor, background remover, Pakistan tax calculator">
+    <meta name="author" content="StackFlow Tools">
+    <link rel="canonical" href="https://stackflowtools.github.io/">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0e17;
+            color: #94a3b8;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 42px;
+            color: #ffffff;
+            margin-bottom: 16px;
+        }
+        h1 span {
+            color: #00D4AA;
+        }
+        h2 {
+            font-size: 28px;
+            color: #e2e8f0;
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        h3 {
+            font-size: 20px;
+            color: #ffffff;
+            margin: 20px 0 10px;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(0,212,170,0.1);
+            color: #00D4AA;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 16px;
+            margin: 30px 0;
+        }
+        .tool-card {
+            background: #0f1623;
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 12px;
+            padding: 20px;
+            text-decoration: none;
+            transition: all 0.2s;
+            display: block;
+        }
+        .tool-card:hover {
+            border-color: rgba(0,212,170,0.3);
+            transform: translateY(-2px);
+        }
+        .tool-card h3 {
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .tool-card p {
+            color: #64748b;
+            font-size: 13px;
+        }
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            text-align: center;
+            font-size: 13px;
+            color: #475569;
+        }
+        .footer a {
+            color: #00D4AA;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .tools-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
-
-<header>
-  <h1>🛠️ StackFlow Tools</h1>
-  <p>Free Online Tools for Pakistani Creators, Gamers & Designers</p>
-  <div class="badges">
-    <span class="badge">🇵🇰 Made in Pakistan</span>
-    <span class="badge">✅ 100% Free</span>
-    <span class="badge">🚫 No Signup</span>
-    <span class="badge">📱 Mobile Friendly</span>
-  </div>
-  <p>Visit: <a href="https://stackflowtools.com" 
-     style="color:white;font-weight:bold;">stackflowtools.com</a></p>
-</header>
-
-<div class="hero-tool">
-  <h2>🎮 #1 Tool — PUBG Stylish Name Generator</h2>
-  <p>Pakistan's most advanced free PUBG gamertag generator. 
-  Create stylish names with 50+ Unicode fonts, 200+ symbols, 
-  AI suggestions, squad tag generator, and live profile preview.
-  No signup. No cost. Works on mobile.</p>
-  <ul style="margin:12px 0 0 20px;line-height:2">
-    <li>✅ 50+ Unicode Font Styles</li>
-    <li>✅ 200+ Clickable Symbols</li>
-    <li>✅ AI Name Suggestions</li>
-    <li>✅ Squad Tag Generator</li>
-    <li>✅ Live Profile Card Preview</li>
-    <li>✅ Name Power Score</li>
-    <li>✅ 100% Free — No Signup</li>
-  </ul>
-  <a href="https://stackflowtools.com/pubg-name-generator/">
-    🎮 Generate Your PUBG Stylish Name Free →
-  </a>
+<div class="container">
+    
+    <div class="badge">🇵🇰 Made in Pakistan</div>
+    <h1>StackFlow <span>Tools</span></h1>
+    <p>Free online tools for Pakistani creators, gamers, and designers. No signup. No watermark. 100% free forever.</p>
+    
+    <h2>🎮 Gaming & Creator Tools</h2>
+    <div class="tools-grid">
+        <a href="https://stackflowtools.com/pubg-name-generator/" class="tool-card">
+            <h3>PUBG Name Generator</h3>
+            <p>50+ fonts, 200+ symbols, AI suggestions, squad tag generator</p>
+        </a>
+        <a href="https://stackflowtools.com/free-fire-stylish-name-generator/" class="tool-card">
+            <h3>Free Fire Name Generator</h3>
+            <p>Stylish FF names with 100+ symbols, within 12 character limit</p>
+        </a>
+        <a href="https://stackflowtools.com/youtube-tag-generator-free-ai-tool-no-signup/" class="tool-card">
+            <h3>YouTube Tag Generator</h3>
+            <p>AI-powered YouTube tags for better video SEO</p>
+        </a>
+        <a href="https://stackflowtools.com/tiktok-comment-generator/" class="tool-card">
+            <h3>TikTok Comment Generator</h3>
+            <p>Generate engaging comments for TikTok videos instantly</p>
+        </a>
+    </div>
+    
+    <h2>🖼️ Image Tools</h2>
+    <div class="tools-grid">
+        <a href="https://stackflowtools.com/background-remover/" class="tool-card">
+            <h3>Background Remover</h3>
+            <p>Remove image backgrounds using AI in one click</p>
+        </a>
+        <a href="https://stackflowtools.com/image-size-compressor/" class="tool-card">
+            <h3>Image Compressor</h3>
+            <p>Compress images to exact KB size for forms</p>
+        </a>
+        <a href="https://stackflowtools.com/image-upscaler/" class="tool-card">
+            <h3>AI Image Upscaler</h3>
+            <p>Enlarge images up to 4x using AI</p>
+        </a>
+        <a href="https://stackflowtools.com/avif-to-jpg-converter/" class="tool-card">
+            <h3>AVIF to JPG Converter</h3>
+            <p>Convert AVIF images to JPG, PNG or WebP</p>
+        </a>
+        <a href="https://stackflowtools.com/webp-to-jpg-converter/" class="tool-card">
+            <h3>WebP to JPG Converter</h3>
+            <p>Convert WebP images to JPG instantly</p>
+        </a>
+        <a href="https://stackflowtools.com/image-to-pdf-converter/" class="tool-card">
+            <h3>Image to PDF Converter</h3>
+            <p>Convert images to PDF documents</p>
+        </a>
+    </div>
+    
+    <h2>💰 Finance & Tax Tools</h2>
+    <div class="tools-grid">
+        <a href="https://stackflowtools.com/pakistan-income-tax-calculator/" class="tool-card">
+            <h3>Income Tax Calculator</h3>
+            <p>Calculate Pakistan income tax for 2026</p>
+        </a>
+        <a href="https://stackflowtools.com/pakistan-zakat-calculator/" class="tool-card">
+            <h3>Zakat Calculator</h3>
+            <p>Calculate Zakat on gold, cash and savings</p>
+        </a>
+        <a href="https://stackflowtools.com/gold-rate-in-pakistan-today-calculator-zakat-more-free/" class="tool-card">
+            <h3>Gold Rate Calculator</h3>
+            <p>Check today's gold rate in Pakistan</p>
+        </a>
+    </div>
+    
+    <h2>🔍 SEO & Blogger Tools</h2>
+    <div class="tools-grid">
+        <a href="https://stackflowtools.com/blog-checker/" class="tool-card">
+            <h3>Blog Checker</h3>
+            <p>Check AdSense readiness and SEO score</p>
+        </a>
+        <a href="https://stackflowtools.com/malware-virus-scanner/" class="tool-card">
+            <h3>Malware Scanner</h3>
+            <p>Scan websites for malware and viruses</p>
+        </a>
+    </div>
+    
+    <div class="footer">
+        <p>© 2026 StackFlow Tools — Free online tools for Pakistan</p>
+        <p>Visit main site: <a href="https://stackflowtools.com/">stackflowtools.com</a></p>
+    </div>
+    
 </div>
-
-<h2>🖼️ Image Tools</h2>
-<div class="tool-grid">
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/background-remover/">
-      ✂️ Background Remover</a>
-    <p>Remove backgrounds using AI instantly</p>
-  </div>
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/image-size-compressor/">
-      📦 Image Compressor</a>
-    <p>Compress images without quality loss</p>
-  </div>
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/image-upscaler/">
-      🔍 AI Image Upscaler</a>
-    <p>Upscale low quality images using AI</p>
-  </div>
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/image-cropper/">
-      📐 Image Cropper</a>
-    <p>Crop to exact dimensions instantly</p>
-  </div>
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/image-rotation-tool/">
-      🔃 Image Rotation Tool</a>
-    <p>Rotate and flip images any angle</p>
-  </div>
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/avif-to-jpg-converter/">
-      🔄 AVIF to JPG Converter</a>
-    <p>Convert AVIF, WebP, HEIC to JPG</p>
-  </div>
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/image-to-pdf-converter/">
-      📄 Image to PDF</a>
-    <p>Convert images to PDF instantly</p>
-  </div>
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/cdr-to-eps-converter/">
-      🗂️ CDR to EPS Converter</a>
-    <p>Convert CDR files to EPS format</p>
-  </div>
-</div>
-
-<h2>🎮 Gaming Tools</h2>
-<div class="tool-grid">
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/pubg-name-generator/">
-      🎮 PUBG Name Generator</a>
-    <p>50+ fonts, 200+ symbols, AI suggest</p>
-  </div>
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/free-fire-stylish-name-generator/">
-      🔥 Free Fire Name Generator</a>
-    <p>Stylish FF names with Unicode fonts</p>
-  </div>
-</div>
-
-<h2>🎬 Creator Tools</h2>
-<div class="tool-grid">
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/youtube-tag-generator-free-ai-tool-no-signup/">
-      🎬 YouTube Tag Generator</a>
-    <p>AI-powered YouTube tags free</p>
-  </div>
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/tiktok-comment-generator/">
-      💬 TikTok Comment Generator</a>
-    <p>Generate TikTok comments instantly</p>
-  </div>
-</div>
-
-<h2>💰 Finance & Tax Tools</h2>
-<div class="tool-grid">
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/pakistan-income-tax-calculator/">
-      🧾 Income Tax Calculator</a>
-    <p>Pakistan income tax 2025-2026</p>
-  </div>
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/pakistan-zakat-calculator/">
-      ☪️ Zakat Calculator</a>
-    <p>Calculate Zakat on savings and gold</p>
-  </div>
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/gold-rate-in-pakistan-today-calculator-zakat-more-free/">
-      🥇 Gold Rate Calculator</a>
-    <p>Live gold rate Pakistan with Zakat</p>
-  </div>
-</div>
-
-<h2>🎯 Games & Fun</h2>
-<div class="tool-grid">
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/random-animal-generator/">
-      🐾 Random Animal Generator</a>
-    <p>Random animal facts and images</p>
-  </div>
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/charades-generator/">
-      🎭 Charades Generator</a>
-    <p>Free charades word generator</p>
-  </div>
-  <div class="tool-card">
-    <a href="https://stackflowtools.com/health-recommender-hikmat-allopathic-homeopathic/">
-      💊 Health Recommender</a>
-    <p>Hikmat, allopathic and homeopathic</p>
-  </div>
-</div>
-
-<h2>⭐ Why StackFlow Tools?</h2>
-<div class="tool-grid">
-  <div class="tool-card">🆓 <strong>100% Free Forever</strong>
-    <p>No premium plans, no paywalls ever</p></div>
-  <div class="tool-card">🚫 <strong>No Signup Required</strong>
-    <p>Open any tool and use instantly</p></div>
-  <div class="tool-card">📱 <strong>Mobile Friendly</strong>
-    <p>Works perfectly on Android and iOS</p></div>
-  <div class="tool-card">🔒 <strong>Privacy First</strong>
-    <p>Files never uploaded to our servers</p></div>
-  <div class="tool-card">🇵🇰 <strong>Pakistan Focused</strong>
-    <p>Built specifically for local needs</p></div>
-  <div class="tool-card">✅ <strong>Commercial Use</strong>
-    <p>All outputs are yours to use freely</p></div>
-</div>
-
-<footer>
-  <p>© 2026 <a href="https://stackflowtools.com">StackFlow Tools</a> 
-  — Free Online Tools for Pakistan 🇵🇰</p>
-  <p style="margin-top:8px;">
-    <a href="https://stackflowtools.com">Home</a> · 
-    <a href="https://stackflowtools.com/pubg-name-generator/">PUBG Tool</a> · 
-    <a href="https://stackflowtools.com/background-remover/">Background Remover</a> · 
-    <a href="https://stackflowtools.com/blog/">Blog</a> · 
-    <a href="https://stackflowtools.com/contact/">Contact</a>
-  </p>
-</footer>
-
 </body>
 </html>
-```
-
-### Step 3 — Commit File
-```
-Commit message: Add GitHub Pages site for StackFlow Tools
-```
-Click **Commit changes** ✅
-
-### Step 4 — Enable Pages
-Go to new repo **Settings** → **Pages**
-```
-Source: Deploy from branch
-Branch: main
-Folder: / (root)
-```
-Click **Save**
-
----
-
-## Wait 5 Minutes Then Visit:
-```
-https://stackflowtools.github.io
-```
-It will show your full site ✅
-
----
-
-## Your Old Repository Is Still Useful
-
-Keep **github.com/stackflowtools/stackflowtools** as it is — the README.md there still gives you a strong backlink. Just make sure the README has all your links as I gave you earlier.
-
----
-
-## After Both Are Live Submit These to Google Search Console
-```
-https://stackflowtools.github.io
-https://github.com/stackflowtools/stackflowtools
